@@ -11,13 +11,18 @@ def checkSum(arr):
     arr_sum = sum(arr)
     total = arr[idx]
     samesum = False
+    arr1 = []
+    arr2 = []
     while (idx<len(arr)):
         total = sum(arr[:idx+1])
         if(total == sum(arr[idx+1:])):
+           arr1=arr[:idx+1]
+           arr2=arr[idx+1:]
            samesum = True
            break
         else:
             idx+=1
+    print arr1, arr2
     return samesum
 if __name__=="__main__":
     arr = [[1,2,3,3,2,1],[5,6,7,4,32,1]]

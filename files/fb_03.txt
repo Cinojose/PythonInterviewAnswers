@@ -1,0 +1,3 @@
+The read method will read in all the data into one text string. This is useful for smaller files where you would like to do text manipulation on the entire file, or whatever else suits you. Then there is readline which is one useful way to only read in individual line incremental amounts at a time and return them as strings. The last explicit method, readlines, will read all the lines of a file and return them as a list of strings.
+
+As mentioned earlier, you can use these methods to only load small chunks of the file at a time. To do this with these methods, you can pass a parameter to them telling how many bytes to load at a time. This is the only argument these methods accept.
