@@ -4,7 +4,7 @@ Word count
 ==============
 Script to count the number of occurance of each word in the file
 
-""""
+"""
 
 
 
